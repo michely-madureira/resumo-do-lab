@@ -1,5 +1,5 @@
 ### resumo-do-lab
-Este repositório contém o resumo das lições aprendidas durante o desenvolvimento do lab na DIO, como o tema: Azrei AI e Azure OpenAI Models
+Este repositório contém o resumo das lições aprendidas durante o desenvolvimento do lab na DIO, como o tema: Azure AI e Azure OpenAI Models
 ___
 # Introdução ao Azure AI e Azure OpenAI Models
 * A OpenAI é uma empresa responsável por criar modelos responsáveis pela IA generativa, como ChatGPT, Copilot, entre outros, utilizados para geração de textos, conteúdos e imagens.
