@@ -1,23 +1,33 @@
 ### resumo-do-lab
-Este repositório contém o resumo das lições aprendidas durante o desenvolvimento do lab na DIO, como o tema: Benefícios da Nuvem
+Este repositório contém o resumo das lições aprendidas durante o desenvolvimento do lab na DIO, como o tema: Tipos de Serviço de Nuvem
 ___
-# Benefícios da Computação em Nuvem
-A computação em nuvem possibilita o uso de recursos de hardware e software disponíveis de forma mais eficiente, permitindo reduzir a capacidade ociosa em armazenamento e processamento de dados, por meio do compartilhamento de computadores e servidores interligados pela internet.
+# Três Principais Modelos de Serviço Da Computação Em Nuvem: 
+A computação em nuvem distribui os recursos na forma de serviços e podem dividir em três cenários principais, de acordo com o nível de serviço oferecido. 
+A diferença principal entre estes modelos está relacionada às responsabilidades dos atores envolvidos na computação em nuvem:
++ INFRAESTRUTURA COMO UM SERVIÇO (IaaS) - É um modelo de serviço de nuvem que permite ao usuário utilizar recursos de infraestrutura sob demanda, como armazenamento, virtualização e rede. 
+Nesse cenário, os serviços de virtualização e rede são fornecidos pelo provedor, enquanto o usuário cuida do sistema operacional, dos aplicativos e dados. 
+Exemplos desse tipo de serviço incluem o serviço de máquinas virtuais do Azure. 
+Diferença: No IaaS, o usuário é responsável por gerenciar tudo, aplicativos, middleware, sistemas operacionais e máquinas virtuais. 
+O provedor de serviço é responsável por manter a infraestrutura do datacenter que hospedará as máquinas virtuais dos usuários. 
+Logo, a IaaS requer o máximo de gerenciamento do usuário entre os serviços da nuvem.
 
-A computação em nuvem proporciona vários benefícios, tais como:
++ PLATAFORMA COMO UM SERVIÇO (PaaS) – É um tipo de modelo de serviço de computação em nuvem que oferece uma plataforma de nuvem flexível e escalonável para desenvolver, implantar, executar e gerenciar apps. 
+Nesse cenário, o usuário tem todas as ferramentas necessárias para criar aplicativos, as necessidades de software, hardware, rede e sistemas operacionais são atendidas pelo provedor de serviços. 
+Diferença:  No PaaS, a responsabilidade do usuário diminui e aumenta a do provedor. O provedor é responsável por entregar todos os recursos de hardware e software necessários para que o usuário possa construir seus aplicativos. O código e os dados gerados pela aplicação são responsabilidade do usuário. 
+Logo, a PaaS requer menos gerenciamento do usuário.
 
-1. **ESCALABILIDADE:** Os recursos de computação em nuvem podem ser facilmente escalados verticalmente ou horizontalmente de acordo com as necessidades do negócio, permitindo às organizações lidar com flutuações na demanda de forma eficiente, com pagamento conforme uso.
-   + No escalonamento vertical, há a adição de recursos para aumentar a potência do servidor, por exemplo, adicionando CPUs ou memória.
-   + No escalonamento horizontal, há a adição de mais servidores que funcionaram juntos.
-      
-2. **ELASTICIDADE:** É possível adaptar a disponibilidade de recursos à medida que a demanda aumenta ou diminui de forma automatica ou manual.
-   
-4. **CONFIABILIDADE:** A computação em nuvem simplifica e diminui os custos relacionados ao backup de dados, recuperação de desastres e manutenção da continuidade dos negócios, pois os dados podem ser replicados em múltiplos zonas redundantes dentro da infraestrutura do provedor de serviços de nuvem.
-   
-6. **PREVISIBILIDADE:** A previsibilidade na computação em nuvem permite que as empresas avancem com confiança no desempenho e nos custos.
-   
-7. **SEGURANÇA:** A computação em nuvem oferece um amplo conjunto de políticas, tecnologias e controles que fortalecem sua postura geral de segurança, ajudando a proteger os dados, os aplicativos e a infraestrutura contra possíveis ameaças.
-   
-9. **GOVERNANÇA:** A governança na nuvem permite definir um conjunto de políticas e regras que definem o desenvolvimento e a implementação de ações de computação em nuvem, o que permite maior previsibilidade, garantir que os resultados sejam atingidos, minimizar ameaças e permite auxiliar os colaboradores a exercerem as suas funções por meio de caminhos já definidos.
-     
-11. **GERENCIABILIDADE:** A computação em nuvem permite o gerenciamento de recursos, ou seja, permite escalar recursos de acordo com a demanda; e permite escalar recursos com  base em um modelo pré-moldados. Além disso, a gerenciabilidade permite gerenciar seu ambiente de nuvem e recursos por meio do portal web ou utilizando uma interface de linha de comando, como uma API ou utilizando o PowerShell.
++ SOFTWARE COMO UM SERVIÇO (SaaS): É um modelo que permite aos usuários se conectar e usar aplicativos baseados em nuvem pela internet, como e-mail, serviços de armazenamento, entre outros. 
+Nesse cenário, as necessidades de computação e armazenamento são atendidas pelo provedor de serviços em nuvem, o usuário só precisa fazer upload e baixar dados. 
+Manutenção, tempo de inatividade, atualização e segurança são atendidos pelo provedor de serviços. 
+Diferença: O SaaS é aquele com o qual o usuário tem menor responsabilidade, bastando apenas se conectar aos aplicativos disponibilizados e utilizar. O provedor de serviços é o que tem maior responsabilidade. Ele é responsável por gerenciar toda a pilha de aplicativos, desde o hardware, passando pelos sistemas operacionais, até o aplicativo. 
+Logo, o SaaS requer o mínimo de gerenciamento do usuário.
+___
+# Modelo de Responsabilidade Compartilhada
++ Em modelos on-premise a organização tem total responsabilidade sobretudo (estrutura, equipamentos, segurança física e logica, atualizações, etc);
++ No modelo de responsabilidade compartilhada, a responsabilidade é compartilhada com o provedor de nuvem.
++ Toda estrutura física passa a ser responsabilidade do provedor de nuvem;
++ O cliente se responsabiliza, com: toda gestão de dados e tudo que é armazenado na nuvem, bem como, será responsável por toda segurança de acesso, login de usuários, autenticação, autorização.
++ Ao transferir os serviços para a nuvem as responsabilidades mudam e o modelo dependerá de tipos de serviço de nuvem adotado como: **IaaS (infraestrutura como serviço)**, **PaaS (plataforma como serviço)** e **SaaS (software como serviço)**.
++ O cliente sempre será responsável pelas informações e dados armazenados na nuvem (como bancos de dados e documentos), assim como pelos dispositivos e suas permissões para acesso por meio dela (telefones celulares, computadores e assim por diante) e por contas e identidades como pessoas, serviços e dispositivos em sua organização. 
++ Já o provedor de nuvem é sempre responsável pelo datacenter físico, rede física e lógica e pelos servidores (hosts físicos).
++ O modelo de serviço escolhido pelo cliente (empresa) determinará a responsabilidade por itens como: sistemas operacionais, controles de rede, aplicativos, identidade e infraestrutura.
